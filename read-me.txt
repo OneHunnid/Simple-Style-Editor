@@ -1,1 +1,11 @@
-Thanks for downloading WebCards Simple Style Editor - Enjoy!
+//WELCOME
+
+Congrats and thank you for downloading the WebCards Simple Style Editor! We hope you enjoy this Squarespace extension and share with other Squarespace developers to spread the love.
+
+// INSTALLATION
+
+To use the Simple Style Editor you will need to log into your Squarespace developer account via SFTP and replace your base.less file WebCards base.less file.  This will switch the style sheet to ours and you will have a simple style editor to use for your site.
+
+//LICENSE 
+
+WebCards Simple Style Editor is available for you to use under the creative common license.  Feel free to use this extension as you wish as long as you credit WebCards as the original creator.
