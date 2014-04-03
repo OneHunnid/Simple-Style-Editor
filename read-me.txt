@@ -12,4 +12,4 @@ Once Simple Style Editor is installed you will need to login to your Squarespace
 
 //LICENSE 
 
-WebCards Simple Style Editor is available for you to use under the creative common license.  Feel free to use this extension as you wish as long as you credit WebCards as the original creator.
+WebCards Simple Style Editor is available for you to use under the MIT license.  Feel free to use this extension as you wish.  It’s also cool to credit WebCards as the original creator.
