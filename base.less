@@ -1,0 +1,262 @@
+/*----- Color -----*/
+
+// tweak: { type: 'color', title: 'Site Background' , "category" : "Color"}
+@site-background-color: #f1f1f1;
+
+// tweak: { type: 'color', title: 'Site Title' , "category" : "Color"}
+@site-title-color: #000;
+
+// tweak: { type: 'color', title: 'Site Title Hover' , "category" : "Color"}
+@site-title-color-hover: #0C6EFF;
+
+// tweak: { type: 'color', title: 'Navigation Links' , "category" : "Color"}
+@nav-color: #000000;
+
+// tweak: { type: 'color', title: 'Navigation Links (Hover)' , "category" : "Color"}
+@nav-color-hover: #0C6EFF;
+
+// tweak: { type: 'color', title: 'Navigation Links (Active)' , "category" : "Color"}
+@nav-color-active: #0C6EFF;
+
+// tweak: { type:'color', title:'Heading 1' , "category" : "Color"}
+@heading-1-color: #222;
+
+// tweak: { type:'color', title:'Heading 2' , "category" : "Color"}
+@heading-2-color: #222;
+
+// tweak: { type:'color', title:'Heading 3' , "category" : "Color"}
+@heading-3-color: #222;
+
+// tweak: { type: 'color', title: 'Body' , "category" : "Color"}
+@body-text-color: #000;
+
+// tweak: { type: 'color', title: 'Link' , "category" : "Color"}
+@link-color: #0C6EFF;
+
+// tweak: { type: 'color', title: 'Link Hover' , "category" : "Color"}
+@link-color-hover: #0052CC;
+
+// tweak: { type: 'color', title: 'Footer' , "category" : "Color"}
+@footer-text-color: #c4c4c4;
+
+/*----- Typography ---*/
+
+// tweak: { "type" : "font", "title" : "Site Title" , "category" : "Typography" }
+.site-title-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.3em;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Navigation" , "category" : "Typography" }
+.main-nav-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 1" , "category" : "Typography" }
+.h1-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.3em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 2" , "category" : "Typography" }
+.h2-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Heading 3" , "category" : "Typography" }
+.h3-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Body" , "category" : "Typography" }
+.body-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.0em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+}
+
+// tweak: { "type" : "font", "title" : "Footer" , "category" : "Typography" }
+.footer-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: .9em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+}
+
+
+
+
+
+/* End of Tweaks
+-----------------------------------------------------------------*/
+
+
+
+
+/* Mobile first
+-------------------------------------------------*/
+
+body {
+	background-color:@site-background-color;
+	max-width: 60em;
+	margin: 50px auto;
+}
+
+.header { }
+
+.site-title{
+	
+	> a{
+	.site-title-font;
+	color:@site-title-color;
+	text-decoration: none;
+	
+	&:hover {color:@site-title-color-hover;}
+	
+	}
+}
+
+.main-navigation {
+	.main-nav-font;
+	
+  ul {  
+    padding-left: 0;
+    
+    li {
+      display: inline-block;
+      
+      	a{
+		  	color:@nav-color;
+		  	text-decoration:none;
+		  	
+		  	&:hover {
+			  	color:@nav-color-hover;
+		  	}
+		  }
+
+      ul {
+        display: none;
+      }
+
+      &:not(:last-child) {
+        margin-right: .5em;
+      }
+
+      &:hover > ul {
+        display: inline-block;
+      }
+
+      &.active-link > a {
+        color: @nav-color-active;
+      }
+
+      &.active-folder > a {
+        color:@nav-color-active;
+      }
+    }
+  }
+}
+
+a {
+  color: @link-color;
+  text-decoration:none;
+  
+  &:hover {color:@link-color-hover;}
+}
+
+.content { 
+	.body-font;
+	color:@body-text-color;
+}
+
+h1 {
+	.h1-font;
+	color:@heading-1-color;
+}
+
+h2 {
+	.h2-font;
+	color:@heading-2-color;
+}
+
+h3 {
+	.h3-font;
+	color:@heading-3-color;
+}
+
+.footer {
+	.footer-font;
+	color:@footer-text-color;
+}
+
+
+/* Homepage
+-----------------------------------------------*/
+
+.homepage { }
+
+
+/* Blog collection
+-----------------------------------------------*/
+
+.collection-type-blog {
+
+  /* Both pages 
+  ---------------------------------------------*/
+
+  /* List page
+  ---------------------------------------------*/
+
+  &.view-list { }
+
+  /* Item page
+  ---------------------------------------------*/  
+
+  &.view-item { }
+  
+}
+
+
+/* Break grid and stack blocks on small screens
+-----------------------------------------------*/
+
+@media screen and (max-width: 48em) {
+  .row .col {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+/* Beyond mobile
+-----------------------------------------------*/
+
+@media screen and (min-width: 48em) { }
