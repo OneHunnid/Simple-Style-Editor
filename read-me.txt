@@ -4,7 +4,11 @@ Congrats and thank you for downloading the WebCards Simple Style Editor! We hope
 
 // INSTALLATION
 
-To use the Simple Style Editor you will need to log into your Squarespace developer account via SFTP and replace your base.less file WebCards base.less file.  This will switch the style sheet to ours and you will have a simple style editor to use for your site.
+To use the Simple Style Editor you will need to log into your Squarespace developer account via SFTP and replace your base.less file with WebCards base.less file.  This will switch the style sheet to ours and you will have a simple style editor to use for your site.
+
+// HOW TO USE
+
+Once Simple Style Editor is installed you will need to login to your Squarespace account.  Once logged in, you will need to hit on Preview Site (eyeball icon) in the top left corner which will bring you to the front of your site.  Then click on the paintbrush icon in the bottom right to launch the style editor.  The Style Editor will slide out from the left and you will be able to modify the typography and colors of your site.
 
 //LICENSE 
 
