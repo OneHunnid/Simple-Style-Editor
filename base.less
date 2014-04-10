@@ -3,6 +3,9 @@
 // tweak: { type: 'color', title: 'Site Background' , "category" : "Color"}
 @site-background-color: #f1f1f1;
 
+// tweak: { type: 'color', title: 'Container Background' , "category" : "Color"}
+@container-background-color: #fff;
+
 // tweak: { type: 'color', title: 'Site Title' , "category" : "Color"}
 @site-title-color: #000;
 
@@ -111,7 +114,20 @@
   line-height: 1.3em;
 }
 
+/*----- Sizes & Values ---*/
 
+// tweak: { "type" : "value", "title" : "Container Width", "min" : 30, "max" : 70, "category" : "Sizes & Values" }
+@container-width: 60em;
+
+// tweak: { "type" : "value", "title" : "Container Padding", "min" : 1, "max" : 5, "category" : "Sizes & Values" }
+@container-padding: 2em;
+
+// tweak: { "type" : "value", "title" : "Container Margin", "min" : 0, "max" : 10, "category" : "Sizes & Values" }
+@container-margin: 1em;
+
+// tweak:{ "category": "Options", "title": "Header Alignment", "type": "dropdown", "options": ["Left", "Center", "Right"], "default": "Center" }
+.header-alignment-center .header { text-align: center; }
+.header-alignment-right  .header { text-align: right;  }
 
 
 
@@ -127,7 +143,14 @@
 body {
 	background-color:@site-background-color;
 	max-width: 60em;
-	margin: 50px auto;
+	margin: @container-margin auto;
+}
+
+.container {
+  max-width: @container-width;
+  margin: 0 auto;
+  padding: @container-padding;
+  background-color:@container-background-color;
 }
 
 .header { }
